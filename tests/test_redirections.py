@@ -1,6 +1,3 @@
-from typing import Any, Dict
-
-
 from platzky.platzky import create_app_from_config, Config
 
 
@@ -16,7 +13,7 @@ def test_plugin_loader():
             "DATA": {
                 "site_content": {"pages": []},
                 "plugins": [
-                    {"name": "redirections", "config": {"/page/test": "/page/test2"}}
+                    {"name": "plugin_test", "config": {}}
                 ],
             },
         },
